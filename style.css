@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: white;
+}
+
+.sidebar {
+  width: 200px;
+  background: #000;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+.album {
+  background: #1e1e1e;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.album img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.player {
+  position: fixed;
+  bottom: 0;
+  left: 200px;
+  right: 0;
+  background: #282828;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
