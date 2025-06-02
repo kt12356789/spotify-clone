@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="sidebar">
+    <h1>Spotify</h1>
+    <ul>
+      <li>🏠 Home</li>
+      <li>🔍 Search</li>
+      <li>📚 Your Library</li>
+    </ul>
+  </div>
+
+  <main>
+    <header>
+      <h2>Welcome Back!</h2>
+    </header>
+
+    <section class="playlist">
+      <h3>Featured Playlist</h3>
+      <div class="album">
+        <img src="assets/cover.jpg" alt="cover"/>
+        <div>
+          <h4>Chill Beats</h4>
+          <p>Lo-fi chill beats to relax</p>
+        </div>
+        <button onclick="playAudio()">▶️</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="player">
+    <audio id="audioPlayer" src="assets/demo.mp3"></audio>
+    <button onclick="togglePlay()">⏯️</button>
+    <input type="range" id="seek" value="0" onchange="seekAudio(this.value)">
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
